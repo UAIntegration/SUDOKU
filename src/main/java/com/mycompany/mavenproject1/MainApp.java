@@ -17,7 +17,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(main1);
         scene.getStylesheets().add("/styles/Styles.css");
         
-        stage.setTitle("JavaFX and Maven");
+        stage.setTitle("Sudoku Solver");
         stage.setScene(scene);
         stage.show();
         String text = "080900013931580700000103890300010080540020061120050009052801000093260158810005000";
