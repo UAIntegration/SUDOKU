@@ -1,0 +1,12 @@
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: red;
+}
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+.button:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: greenyellow;
+}
