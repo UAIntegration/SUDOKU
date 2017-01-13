@@ -1,6 +1,5 @@
 package com.mycompany.mavenproject1;
 
-import ibessonov.Main;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -20,8 +19,6 @@ public class MainApp extends Application {
         stage.setTitle("Sudoku Solver");
         stage.setScene(scene);
         stage.show();
-        String text = "080900013931580700000103890300010080540020061120050009052801000093260158810005000";
-        System.out.println(Main.main(text));
     }
 
     /**

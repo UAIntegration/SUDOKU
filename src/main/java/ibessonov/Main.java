@@ -20,7 +20,7 @@ String myresult = "";
     StringBuilder out = new StringBuilder(171);
         SudokuSolver solver = SudokuSolver.of(field)
                 .withPrecision(1e-5)
-                .withLogging(false)//логинование
+                .withLogging(true)//логинование
                 .build();
         /*IntStream.range(0, getRuntime().availableProcessors()).parallel().forEach(i -> {
             Field result = solver.solve();
