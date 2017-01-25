@@ -14,7 +14,8 @@
          <opaqueInsets>
             <Insets />
          </opaqueInsets></Label>
-      <TextField fx:id="text2" layoutX="32.0" layoutY="43.0" prefHeight="25.0" prefWidth="30.0" promptText="test" />
+      <TextField fx:id="text1" layoutX="92.0" layoutY="43.0" prefHeight="25.0" onAction="#handleTextAction" prefWidth="30.0" promptText="test" />
+      <TextField fx:id="text2" layoutX="32.0" layoutY="43.0" prefHeight="25.0" onAction="#handleTextAction" prefWidth="30.0" promptText="test" />
       <ProgressBar fx:id="prog" layoutY="174.0" prefHeight="18.0" prefWidth="125.0" progress="0.1" />
     </children>
 </AnchorPane>

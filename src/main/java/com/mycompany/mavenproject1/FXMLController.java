@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
 
 public class FXMLController implements Initializable {
     String code = "";
@@ -16,6 +17,30 @@ public class FXMLController implements Initializable {
     
     @FXML
     private Label label;
+    
+    @FXML
+    private TextField text2;
+    
+    @FXML
+    private TextField text1;
+    
+    @FXML
+    protected void handleTextAction(ActionEvent e) {
+        endEdit(false);
+    }
+    
+    private void endEdit(boolean flag) {
+        System.out.println("Flag value: " + flag + " " + text2.getText());
+        // Your implementation here
+        //System.out.println(text2.focusedProperty().getValue());
+        //System.out.println(text1.focusedProperty().getValue());
+        text2.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
+            if (! isNowFocused) {
+                System.out.println(text2.focusedProperty().getValue());
+                System.out.println(text1.focusedProperty().getValue());
+            }
+        });
+    }
     
     @FXML
     private ProgressBar prog;
